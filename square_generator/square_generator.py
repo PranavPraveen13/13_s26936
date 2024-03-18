@@ -13,3 +13,14 @@ class SquareGenerator:
 
         square_roots = [math.sqrt(num) for num in numbers]
         return square_roots
+
+
+class CubicGenerator(SquareGenerator):
+    def generate_cubes(self, start, end):
+
+        if end < start:
+            print("Error: End of the range cannot be less than the start.")
+            return []
+
+        cubes = [x**3 for x in range(start, end + 1)]
+        return cubes
