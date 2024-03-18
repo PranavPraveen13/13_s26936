@@ -1,10 +1,11 @@
 from square_generator.square_generator import SquareGenerator
 from square_generator.square_generator import CubicGenerator
 # Example usage:
-generator = SquareGenerator()
+
 start = int(input("Enter the start of the range: "))
 end = int(input("Enter the end of the range: "))
 
+generator = SquareGenerator()
 squares = generator.generate_squares(start, end)
 if squares:
     square_roots = generator.calculate_square_roots(squares)
