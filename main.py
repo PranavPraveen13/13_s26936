@@ -1,19 +1,4 @@
-import math
-
-class SquareGenerator:
-    def generate_squares(self, start, end):
-
-        if end < start:
-            print("Error: End of the range cannot be less than the start.")
-            return []
-
-        squares = [x**2 for x in range(start, end + 1)]
-        return squares
-
-    def calculate_square_roots(self, numbers):
-
-        square_roots = [math.sqrt(num) for num in numbers]
-        return square_roots
+from square_generator import SquareGenerator
 
 # Example usage:
 generator = SquareGenerator()
